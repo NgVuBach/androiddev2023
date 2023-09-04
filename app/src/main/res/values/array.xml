@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="DaysOfWeek">
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+        <item>Sun</item>
+    </string-array>
+
+    <string-array name="Weather">
+        <item>Partly Cloudy</item>
+        <item>Shower</item>
+        <item>Rain</item>
+        <item>Heavy Rain</item>
+        <item>Cloudy</item>
+        <item>Sunny</item>
+        <item>Thunder Cloud</item>
+    </string-array>
+
+    <string-array name="degree">
+        <item>20C - 25C</item>
+        <item>22C - 27C</item>
+        <item>21C - 24C</item>
+        <item>20C - 22C</item>
+        <item>25C - 31C</item>
+        <item>29C - 35C</item>
+        <item>23C - 28C</item>
+    </string-array>
+
+</resources>
