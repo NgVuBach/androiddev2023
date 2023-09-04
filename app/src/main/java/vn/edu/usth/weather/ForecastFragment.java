@@ -47,12 +47,13 @@ public class ForecastFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT);
+        ScrollView scrollView = new ScrollView(getActivity());
+        FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT);
         params.setMargins(30, 30, 30, 30);
         // Create a vertical LinearLayout
         LinearLayout view = new LinearLayout(getActivity());
         view.setOrientation(LinearLayout.VERTICAL);
-        view.setBackgroundColor(Color.parseColor("#20FF0000"));
+        view.setBackgroundColor(Color.parseColor("#FFE5E5"));
         view.setLayoutParams(params);
 
         //Pratical4
@@ -116,6 +117,7 @@ public class ForecastFragment extends Fragment {
 
         }
         // Return view
-        return view;
+        scrollView.addView(view);
+        return scrollView;
     }
 }
