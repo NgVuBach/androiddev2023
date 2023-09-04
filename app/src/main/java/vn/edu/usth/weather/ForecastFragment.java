@@ -83,7 +83,7 @@ public class ForecastFragment extends Fragment {
             LinearLayout dailyForecast = new LinearLayout(getActivity());
             dailyForecast.setOrientation(LinearLayout.HORIZONTAL);
             dailyForecast.setLayoutParams(params);
-            dailyForecast.setLayoutParams(new LinearLayout.LayoutParams(1000, LinearLayout.LayoutParams.WRAP_CONTENT));
+            dailyForecast.setLayoutParams(new LinearLayout.LayoutParams(1500, LinearLayout.LayoutParams.WRAP_CONTENT));
 
             // Add Days of week
             TextView date = new TextView(getActivity());
@@ -96,7 +96,6 @@ public class ForecastFragment extends Fragment {
             // Add image
             ImageView icon = new ImageView(getActivity());
             icon.setImageResource(img[i]);
-            icon.setHovered(true);
             icon.setLayoutParams(new LinearLayout.LayoutParams(255, 255));
 
 
@@ -104,7 +103,8 @@ public class ForecastFragment extends Fragment {
             TextView info = new TextView(getActivity());
             info.setTextSize(18);
             info.setText(weather[i] +"\n" + degree[i]);
-            info.setPadding(40,100,15,15);
+            date.setGravity(Gravity.CENTER);
+            info.setPadding(40,0,15,15);
 
             // Add everything back to horizontal layout
             dailyForecast.addView(date);
