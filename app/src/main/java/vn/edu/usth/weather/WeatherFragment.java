@@ -25,8 +25,11 @@ public class WeatherFragment extends Fragment {
         // Required empty public constructor
     }
 
-    public static WeatherFragment newInstance(String param1, String param2) {
+    public static WeatherFragment newInstance(String city) {
         WeatherFragment fragment = new WeatherFragment();
+        Bundle args = new Bundle();
+        args.putString("city", city);
+        fragment.setArguments(args);
         return fragment;
     }
 
